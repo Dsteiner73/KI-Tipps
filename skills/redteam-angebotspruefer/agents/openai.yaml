@@ -1,0 +1,14 @@
+interface:
+  display_name: Redteam Angebotsprüfer
+  short_description: Angebote kritisch prüfen und gezielt redigieren
+  default_prompt: Prüfe dieses Angebot mit $redteam-angebotspruefer aus Kunden-, Beschaffungs-,
+    Delivery- und Wettbewerbssicht und priorisiere die Korrekturen vor Abgabe.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
