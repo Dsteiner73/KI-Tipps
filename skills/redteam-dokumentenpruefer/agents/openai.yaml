@@ -1,0 +1,8 @@
+interface:
+  display_name: "RedTeam-Dokumentenpruefer"
+  short_description: "Dokumente mit Best Practices und CRAP kritisch prüfen"
+  default_prompt: "Prüfe dieses Dokument mit $redteam-dokumentenpruefer: Erkenne Typ, Branche und Zweck, recherchiere passende Best Practices und prüfe Inhalt, Fakten und Quellen mit CRAP."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  allow_implicit_invocation: true

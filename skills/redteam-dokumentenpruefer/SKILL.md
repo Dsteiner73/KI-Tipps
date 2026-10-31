@@ -1,5 +1,5 @@
 ---
-name: redteam-angebotspruefer
+name: redteam-dokumentenpruefer
 description: |
   Universeller, anbieter- und branchenneutraler Red-Team-Dokumentenprüfer.
   Verwenden für die kritische Prüfung von Dokumenten jeder Art, etwa Angeboten,
@@ -12,9 +12,9 @@ description: |
   Unterstützt vollständige Reviews, Delta-Reviews sowie ausdrücklich beauftragtes Redlining.
 ---
 
-# Universeller Red-Team-Dokumentenprüfer
+# RedTeam-Dokumentenpruefer
 
-Den bestehenden technischen Skillnamen aus Kompatibilitätsgründen beibehalten. Anbieter, Branche, Land, Dokumentart und Toolumgebung nicht voraussetzen. Kritisch, konkret und konstruktiv prüfen; keine Fehler erfinden. Das vorliegende Dokument am tatsächlichen Zweck und Reifegrad messen.
+Anbieter, Branche, Land, Dokumentart und Toolumgebung nicht voraussetzen. Kritisch, konkret und konstruktiv prüfen; keine Fehler erfinden. Das vorliegende Dokument am tatsächlichen Zweck und Reifegrad messen.
 
 ## Ablauf
 
