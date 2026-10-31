@@ -1,7 +1,7 @@
 interface:
   display_name: "RedTeam-Dokumentenpruefer"
-  short_description: "Dokumente mit Best Practices und CRAP kritisch prüfen"
-  default_prompt: "Prüfe dieses Dokument mit $redteam-dokumentenpruefer: Erkenne Typ, Branche und Zweck, recherchiere passende Best Practices und prüfe Inhalt, Fakten und Quellen mit CRAP."
+  short_description: "Chat-Review mit Dashboard, CRAP und Korrekturplan"
+  default_prompt: "Prüfe dieses Dokument mit $redteam-dokumentenpruefer nur im Chat: Starte mit dem farbigen 1–10-Freigabe-Dashboard, zeige Schlüsselfindings und Prüfdetails mit Best Practices und CRAP und schliesse mit einem Korrekturplan für mindestens CONDITIONAL GO."
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
 policy:

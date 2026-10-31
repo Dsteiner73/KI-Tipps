@@ -1,4 +1,4 @@
-> Geltung: Ergänzendes Modul ausschliesslich für Angebote und Offerten. Für alle Dokumenttypen gilt der Ablauf in SKILL.md; bei Widersprüchen hat SKILL.md Vorrang. Angebotsbezogene Scores und Abschlussformate nicht auf andere Dokumenttypen übertragen.
+> Geltung: Ergänzendes Fachmodul ausschliesslich für Angebote. Das nachfolgende historische 1–5-Scoring und Schlussformat sind durch SKILL.md ersetzt und nicht anzuwenden. Für jede Prüfung gelten ausschliesslich die Chat-Ausgabe, das 1–10-Dashboard am Anfang und der Korrekturvorschlag am Schluss gemäss SKILL.md und references/output-dashboard.md.
 
 Red-Team-Referenzprompt für Angebote
 
@@ -430,20 +430,9 @@ Wo ist das anbietende Unternehmen schwächer?
 
 Welche Verbesserung würde den Wettbewerbsnachteil reduzieren?
 
-14. Scoring
+14. Freigabereife
 
-Bewerte das Angebot von 1 bis 5.
-
-Berechne den gewichteten Gesamtscore.
-
-Interpretation
-
-4.5–5.0: Angebotsreif
-4.0–4.49: gezielte Korrekturen erforderlich
-3.5–3.99: erneuter vollständiger Review
-unter 3.5: nicht freigeben
-
-Ein schwerwiegender Fehler kann unabhängig vom Gesamtscore ein NO-GO auslösen.
+Das 1–10-Dashboard und die qualitative Rubrik aus SKILL.md und references/output-dashboard.md verwenden. Keinen separaten 1–5-Angebotsscore berechnen. Wesentliche Freigabehürden haben Vorrang vor einem Zahlenwert.
 
 15. Top-10-Findings
 
@@ -453,45 +442,9 @@ Verwende:
 
 Priorisiere nach Einfluss auf die Zuschlagswahrscheinlichkeit, nicht nach redaktioneller Einfachheit.
 
-16. Finales Red-Team-Urteil
+16. Ausgabe
 
-Beende den Review zwingend mit folgendem Format:
-
-Entscheidung
-
-GO / CONDITIONAL GO / NO-GO
-
-Die drei stärksten Elemente
-
-...
-
-...
-
-...
-
-Die drei grössten Zuschlagsrisiken
-
-...
-
-...
-
-...
-
-Wahrscheinlichster Ablehnungsgrund
-
-...
-
-Wichtigste Korrektur vor Abgabe
-
-...
-
-Wettbewerbsfähigkeit
-
-Würde das Angebot in seiner aktuellen Form gegen einen gleich qualifizierten, professionell auftretenden Wettbewerber bestehen? Begründe die Antwort in maximal fünf Sätzen.
-
-Freigabeempfehlung
-
-...
+Die verbindliche Reihenfolge aus SKILL.md verwenden: Dashboard, Schlüsselfindings, Prüfdetails, CRAP, Korrekturvorschlag. Anbieterbezogene Stärken und Risiken sowie Wettbewerbsfähigkeit innerhalb der Prüfdetails darstellen. Mit priorisierten Korrekturen und überprüfbaren Bedingungen für mindestens CONDITIONAL GO schliessen; keine automatische Freigabe versprechen und keine Berichtsdatei erzeugen.
 
 Zentrale Red-Team-Regel
 
@@ -507,16 +460,7 @@ Kundenanforderung | Quelle | Im Angebot adressiert? | Wo? | Qualität 1–5 | L�
 
 Arbeitspaket | Problem | Ziel | Vorgehen | Deliverables | Aufwand | Nutzen | Score
 
-Dimension | Gewicht
-Kundenverständnis | 15 %
-Abdeckung der Anforderungen | 15 %
-Lösung und Arbeitspakete | 15 %
-Konkretheit und Deliverables | 10 %
-Team und Kompetenznachweis | 10 %
-Preis-Leistungs-Verhältnis | 10 %
-Partner, Governance und Betrieb | 5 %
-Beschaffungsfähigkeit | 10 %
-Professionalität | 10 %
+Ein altes dimensionsgewichtetes Scoring wird nicht mehr verwendet. Eine gegebenenfalls ausdrücklich angeforderte separate Bewertungsmatrix ersetzt weder Dashboard noch Freigabehürden.
 
 Priorität | Finding | Auswirkung | Konkrete Korrektur
 🔴 Kritisch |  |  | 

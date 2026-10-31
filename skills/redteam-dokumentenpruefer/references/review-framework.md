@@ -29,3 +29,6 @@ Aussagen, Schreibweise, Begriffe und Verweise auf Konsistenz prüfen. Layout nur
 
 ## Befunde und Urteil
 Jeden Befund an einer präzisen Stelle verankern und verwendeten Massstab angeben. Fehlender Beleg ist nicht dasselbe wie widerlegt. Keine Vermutungen über Täuschungsabsicht oder KI-Autorschaft aus Stil ableiten. Korrekturen nach Entscheidungs- und Schadensrelevanz priorisieren. CRAP und fachliches Gesamturteil getrennt halten. Die Verwendungsempfehlung auf Zweck, geprüfte Fassung, Umfang und offene Punkte begrenzen.
+
+## Ausgabe und nächste Iteration
+Nur im Chat ausgeben; keine Berichtsdatei ohne ausdrücklichen Dateiwunsch. Mit dem farbigen 1–10-Dashboard beginnen (1–4 NO-GO, 5–7 CONDITIONAL GO, 8–10 GO), anschliessend Schlüsselfindings und Details mit CRAP zeigen. Die Skala beschreibt qualitative Freigabereife, keine Erfolgswahrscheinlichkeit. Wesentliche Freigabehürden übersteuern den Wert; bei fehlender Bewertungsgrundlage keinen Wert erfinden. Mit konkreten Korrekturen, überprüfbaren Abschlusskriterien und Bedingungen für mindestens CONDITIONAL GO schliessen. Die vollständige Rubrik und Ausgabevorgaben stehen in output-dashboard.md und SKILL.md.
