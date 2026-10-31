@@ -1,3 +1,5 @@
+> Geltung: Ergänzendes Modul ausschliesslich für Angebote und Offerten. Für alle Dokumenttypen gilt der Ablauf in SKILL.md; bei Widersprüchen hat SKILL.md Vorrang. Angebotsbezogene Scores und Abschlussformate nicht auf andere Dokumenttypen übertragen.
+
 Red-Team-Referenzprompt für Angebote
 
 Anbieter- und branchenneutrale Fassung. Bei Abweichungen gilt SKILL.md. Passe Fachrollen, Rechtsraum, Schreibweise und Prüftiefe an den belegten Auftragskontext an; IT- und öffentliche Beschaffungsaspekte gelten nur, soweit relevant.

@@ -1,51 +1,31 @@
-# Prüfraster für vollständige Angebotsreviews
+# Universeller Prüfrahmen
 
-Anbieter- und branchenneutral anwenden. Fachrollen, technische Prüfpunkte, Rechtsraum und Beschaffungsregeln anhand des belegten Auftragskontexts auswählen; nicht relevante Aspekte nicht als Lücke werten.
+## Dokument und Kontext
+Geprüfte Identität, Version, Entstehungsdatum, Dokumentstatus und Beilagen festhalten. Haupttyp, Fachgebiet, Zweck, Zielgruppe und erwartete Handlung aus Inhalt und Auftrag ableiten. Mischformen und Unsicherheiten ausweisen.
 
-## 1 Bedarf
-Ausgangslage, konkretes Problem, explizite und nachvollziehbar abgeleitete Anforderungen, Rahmenbedingungen, Erfolgskriterien. Belegte Kundenforderung von Angebotsdarstellung und Reviewer-Interpretation trennen.
+## Massstab
+Erst identifizieren, dann passende aktuelle Best Practices recherchieren, dann bewerten. Auftragsvorgaben, geltende Anforderungen, freiwillige Leitlinien und Reviewer-Einschätzungen unterscheiden. Quellen mit konkreten Fundstellen dokumentieren und nach CRAP prüfen. Keine allgemeine Empfehlung zum Pflichtkriterium machen.
 
-## 2 Anforderungsabdeckung
-Tabelle: Anforderung | Quelle | Abdeckung | Fundstelle | Qualität 1–5 | Lücke/Risiko. Fehlenden Kundenauftrag als Prüfgrenze kennzeichnen. Produkt- und Anbieterthemen identifizieren, die den Kundenbedarf überlagern.
+## Universelle Kerndimensionen
+| Dimension | Leitfragen |
+|---|---|
+| Zweck und Zielgruppe | Erfüllt das Dokument den erklärten Zweck? Sind Kernaussage und erwartete Handlung verständlich? |
+| Vollständigkeit | Fehlen für den Zweck wesentliche Inhalte, Beilagen, Definitionen oder Entscheidungen? |
+| Fakten und Quellen | Belegt die Quelle die konkrete Behauptung? Stimmen Zahlen, Zitate und Kontext? |
+| Logik | Folgen Schlussfolgerungen aus den Prämissen? Sind Kausalität und Korrelation getrennt? |
+| Konsistenz | Passen Summary, Haupttext, Tabellen, Grafiken, Termine und Anlagen zusammen? |
+| Ausführbarkeit | Sind soweit relevant Rollen, Ressourcen, Abhängigkeiten, Termine und Erfolgskriterien nachvollziehbar? |
+| Folgen | Welche Chancen, Risiken, Gegenargumente, Betroffenen und langfristigen Wirkungen werden berücksichtigt? |
+| Kommunikation | Sind Sprache, Detailtiefe, Struktur und Ton für die Zielgruppe geeignet? |
+| Form | Sind Referenzen, Beschriftungen, Versionierung, Barrierefreiheit und sichtbares Layout angemessen? |
 
-## 3 Executive-Test
-Problem, Vorschlag, Tätigkeit, Ergebnisse, Team, Zusammenarbeit, Dauer, Preis, Optionen, Differenzierung jeweils klar/teilweise klar/unklar bewerten. Entscheidend ist, ob die Kerninformationen nach fünf Minuten ohne Rekonstruktion verständlich sind.
+N/A begründen. Einen Gedichtband nicht auf Projektbudget und ein Protokoll nicht auf Literaturübersicht prüfen.
 
-## 4 Arbeitspakete
-Tabelle: AP | Problem/Ziel | Tätigkeit/Methode | Rollen | Lieferobjekt | Aufwand | Fertigstellung/Nutzen | Score. Fehlende Daten ausdrücklich offenlassen. Passenden Detaillierungsgrad für die Vertragsphase wählen.
+## Mengen und Daten
+Rechenschritte, Einheiten, Zeitraum, Nenner und Datenstand festhalten. Prozent von Prozentpunkten, Bestände von Flüssen, nominale von realen Werten und einmalige von laufenden Kosten unterscheiden. Formelrichtigkeit von der Verlässlichkeit der Eingangsgrössen trennen. Tabellen und Grafiken gegen Daten abgleichen; Skalen und Auslassungen prüfen. Keine fehlenden Zahlen erfinden.
 
-## 5 Startfähigkeit
-Projektstart, Vorlauf, Schlüsselpersonen und Verfügbarkeit, Kundenzuarbeit, Datenfristen, Workshops und Teilnehmende, Vor-/Nachbereitung, Reporting, Entscheidungsrechte, Freigaben, Änderungen, Partnerabhängigkeiten. Klärungsbedarf niedrig/mittel/hoch und konkrete Kundenfragen ausweisen.
+## Redaktion und Darstellung
+Aussagen, Schreibweise, Begriffe und Verweise auf Konsistenz prüfen. Layout nur anhand gerenderter Darstellung beurteilen; Umfang dieser Prüfung ausweisen. Extraktions- oder Darstellungsfehler nicht ungeprüft dem Original zuschreiben. Entwurfsmarkierungen nach Dokumentstatus bewerten.
 
-## 6 Preis und Mengen
-Rechnungen unabhängig nachrechnen; gleiche Leistungsbasis vergleichen. Rollen/Sätze, PT-Konvention, Stunden, Steuern, Kostendach und Optionen abgleichen. Drittleistungen und Nebenkosten erfassen. Reserve ermitteln. TCO, Zahlungsfluss und Abschreibung nicht doppelt zählen. Concurrency-Nenner, gruppenspezifische versus gleichzeitige Spitzen und Prozentpunkte prüfen. Keine fehlende Preisbasis durch Marktannahmen ersetzen.
-
-## 7 Kompetenz und Differenzierung
-Vergleichbare Aufgaben und Ergebnisbeiträge aus Referenzen, benannte Schlüsselpersonen, fachliche Breite, aktuelle Zertifizierungen, Methoden und Übergabefähigkeit. Allgemeine Branchenlogos nicht als Kompetenznachweis für das konkrete Mandat werten.
-
-## 8 Partner und Governance
-Verantwortlichkeit, Schnittstellen, Betreiber, Architektur, Security, Controlling, Aufwände, Kostenträger, Datenweitergabe, zugesicherte Beiträge und Ersatzvorgehen bei Ausfall prüfen. Doppelspurigkeiten und zusätzliche ungeklärte Schnittstellen kennzeichnen.
-
-## 9 Nachhaltigkeit
-Skalierung, Wissenstransfer, Betriebsmodell, Dokumentation, Nutzungsrechte, Modelleigentümer, Pflegeprozess, Hersteller-/Partnerabhängigkeit, Exit und Wechselkosten prüfen. Bei einem Analysemandat bewerten, ob dies angemessen untersucht wird, statt dessen Realisierung zu verlangen.
-
-## 10 Beschaffung und Vertrag
-Leistungsgegenstand, Vergleichbarkeit, messbare Ergebnisse, Optionen, Laufzeit, Abruf, Kostendach, Nebenkosten, Datenschutz, Informationssicherheit, Vertraulichkeit, IP, Neutralität, Funding-Interessen, Referenzrechte und Standardklauseln prüfen. Öffentlichen Auftraggeber und anwendbare Zuständigkeiten nicht ungeprüft unterstellen. Unterschied zwischen Vertragskonsistenz und Rechtsgutachten wahren.
-
-## 11 Vorlagenreste
-Falsche Kunden-/Firmennamen, Technologien, Daten, Rollen, Partnerbezeichnungen, generische Marketingtexte, Platzhalter und widersprüchliche Werte suchen. Kundenspezifitätsgrad 1 (generisch) bis 5 (nur für diesen Kunden) begründen.
-
-## 12 Dokumentqualität
-Text, Struktur, Stil, Grafiken und Vertrauen bewerten. Vollständig rendern; Inhaltsverzeichnis, Felder, Tabellen, Lesbarkeit, leere Seiten und Umbrüche kontrollieren. Kommentare, Änderungen und Formularplatzhalter auf tatsächlichen Versandstatus beziehen. Keine optischen Befunde allein aus Textauszug ableiten.
-
-## 13 Wettbewerb
-Hypothesen A/B/C vergleichen: Auswahlgrund für den Kunden, eigene Stärke, eigene Schwäche und konkrete Gegenmassnahme. Den 20-Prozent-Preisabschlag auf denselben belegten Vergleichsbetrag beziehen; nicht Kostendach mit Planung oder inkludierten mit exkludierten Steuern vergleichen.
-
-## 14 Score
-Gewichte und Schwellen aus SKILL.md verwenden. Tabelle Dimension | Gewicht | Score | Begründung. Gewichte müssen 100 Prozent ergeben bzw. bei N/A transparent normalisiert werden. Faktenlage von Bewertung trennen. Keine Scheingenauigkeit: auf zwei Dezimalstellen runden.
-
-## 15 Findings
-Höchstens zehn zentrale Findings, zusammengehörige Punkte bündeln. Schema: ID | Priorität | Beleg/Fundstelle | Konsequenz | Korrektur | Zuständige Rolle. Behebungsstatus bei wiederholter Prüfung ergänzen. Schwerwiegende Fehler nicht mit positiven Teilwerten verrechnen.
-
-## 16 Schlussurteil
-Verpflichtendes Schlussformat aus SKILL.md verwenden. Fachliche Bedingungen konkret und überprüfbar formulieren. Keine externe Freigabe behaupten.
+## Befunde und Urteil
+Jeden Befund an einer präzisen Stelle verankern und verwendeten Massstab angeben. Fehlender Beleg ist nicht dasselbe wie widerlegt. Keine Vermutungen über Täuschungsabsicht oder KI-Autorschaft aus Stil ableiten. Korrekturen nach Entscheidungs- und Schadensrelevanz priorisieren. CRAP und fachliches Gesamturteil getrennt halten. Die Verwendungsempfehlung auf Zweck, geprüfte Fassung, Umfang und offene Punkte begrenzen.
