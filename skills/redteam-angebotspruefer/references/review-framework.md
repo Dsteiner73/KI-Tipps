@@ -1,5 +1,7 @@
 # Prüfraster für vollständige Angebotsreviews
 
+Anbieter- und branchenneutral anwenden. Fachrollen, technische Prüfpunkte, Rechtsraum und Beschaffungsregeln anhand des belegten Auftragskontexts auswählen; nicht relevante Aspekte nicht als Lücke werten.
+
 ## 1 Bedarf
 Ausgangslage, konkretes Problem, explizite und nachvollziehbar abgeleitete Anforderungen, Rahmenbedingungen, Erfolgskriterien. Belegte Kundenforderung von Angebotsdarstellung und Reviewer-Interpretation trennen.
 

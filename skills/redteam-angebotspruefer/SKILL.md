@@ -1,13 +1,13 @@
 ---
 name: redteam-angebotspruefer
 description: |
-  Unabhängiger Red-Team-Review für isolutions-Angebote (öffentliche Hand, Gesundheitswesen CH):
+  Unabhängiger, branchen- und anbieterneutraler Red-Team-Review für Angebote und Offerten:
   prüft Kundenbedarf, Anforderungsabdeckung, Delivery, Preis, Vertrag, Beschaffungsfähigkeit
   plus Zuschlagsrisiken; liefert GO / CONDITIONAL GO / NO-GO mit gewichtetem Score.
   Use when user asks to "Prüfe dieses Angebot mit Red-Team", "Angebots-QA", "Offertprüfung",
   "erneuter Review", "Redlining im Angebot", "Red-Team-Review der Offerte", or wants a delta QA
   of a revised bid. Do NOT use for pure legal advice, proofreading without bid context or
-  drafting a new offer from scratch; use docx instead for plain Word editing.
+  drafting a new offer from scratch; use suitable document tools for plain Word editing.
 license: MIT
 metadata:
   category: analysis
@@ -16,7 +16,7 @@ metadata:
 
 # Redteam Angebotsprüfer
 
-Kritischer, unabhängiger Review von Angeboten/Offerten aus Sicht von fachlichem Auftraggeber, Beschaffungsstelle, CIO/Architektur/Delivery und Wettbewerber — mit priorisierten Findings, gewichtetem Score und klarer Freigabeempfehlung. Die gesamte Prüflogik steht unten unverändert; Detailraster in `references/`.
+Kritischer, unabhängiger Review von Angeboten/Offerten aus Sicht von fachlichem Auftraggeber, Beschaffungsstelle, CIO/Architektur/Delivery und Wettbewerber — mit priorisierten Findings, gewichtetem Score und klarer Freigabeempfehlung. Detailraster in `references/`.
 
 ## Quick Start
 
@@ -41,22 +41,29 @@ Nutzer: «Mach das Redlining direkt im Angebot»
 
 ## When NOT to Use
 
-- Reine Rechtsberatung oder verbindliche juristische Beurteilung von AGB/Verträgen → an Rechtsdienst verweisen; hier nur Klärungsbedarf benennen.
-- Gewöhnliche Textkorrektur oder Formatierung ohne Angebotsbezug → use docx instead (Word) bzw. pdf (PDF).
-- Neues Angebot von Grund auf schreiben → docx-Skill; dieser Skill prüft, er verfasst keine Offerte.
-- Tagesplanung, Inbox- oder Aufgabenübersichten → daily-briefing-dominik.
+- Reine Rechtsberatung oder verbindliche juristische Beurteilung von AGB/Verträgen → an qualifizierte Rechtsberatung verweisen; hier nur Klärungsbedarf benennen.
+- Gewöhnliche Textkorrektur oder Formatierung ohne Angebotsbezug → geeignete Word- bzw. PDF-Werkzeuge verwenden.
+- Neues Angebot von Grund auf schreiben → geeignete Dokumentwerkzeuge; dieser Skill prüft, er verfasst keine Offerte.
 - Versand oder Freigabe eines Angebots an Kunden → ausserhalb des Skills; immer menschliche Freigabe.
+
+## Kontext und Anwendbarkeit
+
+Verwende den Skill für Angebote beliebiger Unternehmen und Branchen sowie für private und öffentliche Auftraggeber. Leite Anbieter, Kunde, Branche, Leistungsart, Land, Währung, Steuerbasis, Rechtsraum und Beschaffungsverfahren aus den Unterlagen ab. Unterstelle weder einen bestimmten Arbeitgeber noch Schweizer Zuständigkeiten oder eine IT-Leistung.
+
+Passe die Prüfperspektiven an den Auftrag an: fachlicher Bedarf, Einkauf/Beschaffung, fachliche und operative Lieferfähigkeit sowie Wettbewerb. Prüfe CIO, IT-Architektur, Informationssicherheit, Betrieb, Hersteller und technische Zertifizierungen nur soweit sachlich relevant; prüfe bei anderen Leistungen die entsprechenden Fach-, Qualitäts- und Lieferanforderungen. Wende öffentliche Beschaffungsregeln nur bei belegtem öffentlichem Beschaffungskontext an.
+
+Die Gewichte und Schwellen sind ein internes Review-Raster, keine belegte Zuschlagsprognose und kein Ersatz für veröffentlichte Zuschlagskriterien. Prüfe vorhandene kundenseitige Bewertungskriterien zusätzlich und getrennt. Weise nicht anwendbare Dimensionen als N/A aus.
 
 ## Workflow
 
-1. **Unterlagen sammeln:** Angebotsfassung, Ausschreibung/Pflichtenheft, Beilagen, Gesprächsnotizen. Lokale Anhänge direkt lesen; fehlende Dateien gezielt über `ReadFileContent` (SharePoint/OneDrive) oder `SearchM365` auflösen. Keine beliebigen weiteren Kundendokumente laden.
+1. **Unterlagen sammeln:** Angebotsfassung, Ausschreibung/Pflichtenheft, Beilagen, Gesprächsnotizen. Lokale Anhänge direkt lesen; fehlende Dateien gezielt über verfügbare und autorisierte Datei- oder Suchzugriffe auflösen. Setze keine bestimmte Plattform oder Integration voraus. Keine beliebigen weiteren Kundendokumente laden.
 2. **Prüfgrundlage festhalten:** Version, Datum, geprüfte Unterlagen; fehlende Primärunterlagen benennen und Urteil begrenzen.
 3. **Modus wählen:** Standard = vollständiger Review; bei «weiterer QA»/«erneuter Review» = Delta-Review (neue Fassung immer neu lesen).
 4. **Bedarf und Anforderungsmatrix** erstellen (siehe Prüfschritte).
 5. **Executive-Fünf-Minuten-Test** und **Arbeitspaket-Review** durchführen.
 6. **Preis, Mengen und Delivery** nachrechnen und plausibilisieren.
-7. **Vertrag, Neutralität, Dokumentqualität** prüfen; bei Layout-QA mit dem docx-/pdf-Skill rendern.
-8. **Externe Behauptungen** (Produkt, Preis, Recht, Zertifizierung) nur soweit nötig mit `web_search`/`web_fetch` an Primärquellen verifizieren.
+7. **Vertrag, Neutralität, Dokumentqualität** prüfen; bei Layout-QA mit geeigneten Dokument- oder PDF-Werkzeugen rendern.
+8. **Externe Behauptungen** (Produkt, Preis, Recht, Zertifizierung) nur soweit nötig mit verfügbaren Recherchewerkzeugen anhand von Primärquellen verifizieren.
 9. **Wettbewerbstest und gewichteten Score** berechnen.
 10. **Ausgabe** im Format unten liefern; Redlining nur auf ausdrücklichen Wunsch (Abschnitt «Redlining und Dateiarbeit»).
 
@@ -64,7 +71,7 @@ Nutzer: «Mach das Redlining direkt im Angebot»
 
 Suche nach belastbaren Gründen, weshalb der Kunde ablehnen, schlechter bewerten oder einen Wettbewerber bevorzugen könnte. Prüfe gleichzeitig als fachlicher Auftraggeber, Beschaffungsstelle, CIO/Architektur/Delivery und Wettbewerber. Erfinde keine Fehler, um streng zu wirken. Trenne belegten Fehler, fehlenden Nachweis, offene Entscheidung und fachliche Einschätzung. Leite keinen Verstoss gegen Vorgaben (Regelkonformität) allein aus einer fehlenden Angabe ab.
 
-Schreibe prägnant, konstruktiv und in Schweizer Rechtschreibung. Beurteile das vorliegende Angebot, nicht einen hypothetischen Idealumfang. Fordere keine Umsetzung, Tests oder Detailarchitektur, wenn nur eine Vorstudie angeboten wird; prüfe stattdessen, ob Grenzen und Nachweise dazu passen.
+Schreibe prägnant und konstruktiv in der gewünschten Sprache und regionalen Schreibweise; orientiere dich ohne ausdrückliche Vorgabe an der Anfrage. Beurteile das vorliegende Angebot, nicht einen hypothetischen Idealumfang. Fordere keine Umsetzung, Tests oder Detailarchitektur, wenn nur eine Vorstudie angeboten wird; prüfe stattdessen, ob Grenzen und Nachweise dazu passen.
 
 ## Quellen und Arbeitsmodus
 
@@ -100,7 +107,7 @@ Rendere Word/PDF bei Layout-QA mit dem einschlägigen Dokument-/PDF-Skill und pr
 
 ### Wettbewerbstest und Scoring
 
-Simuliere A: 20 Prozent günstiger bei solider Leistung; B: gleicher Preis mit professionellerem Auftritt und stärkeren Referenzen; C: Spezialist des Kernthemas. Kennzeichne dies als hypothetisch. Begründe, warum der Kunde isolutions wählen sollte, ausschliesslich anhand der Angebotsbelege. Prüfe Referenzbezug statt Logoanzahl. Bewerte Kundenspezifität 1–5.
+Simuliere A: 20 Prozent günstiger bei solider Leistung; B: gleicher Preis mit professionellerem Auftritt und stärkeren Referenzen; C: Spezialist des Kernthemas. Kennzeichne dies als hypothetisch. Begründe, warum der Kunde das anbietende Unternehmen wählen sollte, ausschliesslich anhand der Angebotsbelege. Prüfe Referenzbezug statt Logoanzahl. Bewerte Kundenspezifität 1–5.
 
 Nutze folgende Gewichte: Kundenverständnis 15 %, Anforderungsabdeckung 15 %, Lösung/Arbeitspakete 15 %, Konkretheit/Lieferobjekte 10 %, Team/Kompetenz 10 %, Preis-Leistung 10 %, Partner/Governance/Betrieb 5 %, Beschaffungsfähigkeit 10 %, Professionalität 10 %. Berechne Summe(Gewicht × Score)/100. Begründe Dimensionswerte. Bei nicht anwendbaren Dimensionen kennzeichne N/A und normalisiere auf verbleibende Gewichte; bei unprüfbaren zentralen Dimensionen kennzeichne den Score als vorläufig statt Werte zu erfinden.
 
@@ -125,7 +132,7 @@ Beende jeden Review mit:
 
 ## Redlining und Dateiarbeit
 
-Lies den Dokument-Skill und bei persistenten Dateien den Library-Skill. Bewahre Branding, Bilder, Struktur und bestehende Nutzeränderungen. Lege sichere Textkorrekturen als echte Word-Revisionen an; kommentiere fachliche, rechtliche und kommerzielle Entscheidungen, statt Zusagen, Preise, Partner oder Leistungsumfang zu erfinden. Korrigiere Summen nur nachvollziehbar und kennzeichne fehlende Bestätigung der Eingangsgrössen. Ändere keine Vertragsentscheidung stillschweigend. Verankere Kommentare an der eigentlichen Textstelle, nicht am Inhaltsverzeichnis.
+Nutze für Dateibearbeitung die verfügbaren Dokumentwerkzeuge und beachte die geltenden Speicherregeln der Arbeitsumgebung. Bewahre Branding, Bilder, Struktur und bestehende Nutzeränderungen. Lege sichere Textkorrekturen als echte Word-Revisionen an; kommentiere fachliche, rechtliche und kommerzielle Entscheidungen, statt Zusagen, Preise, Partner oder Leistungsumfang zu erfinden. Korrigiere Summen nur nachvollziehbar und kennzeichne fehlende Bestätigung der Eingangsgrössen. Ändere keine Vertragsentscheidung stillschweigend. Verankere Kommentare an der eigentlichen Textstelle, nicht am Inhaltsverzeichnis.
 
 Prüfe nach Bearbeitung Dateiöffnung, XML-Struktur, Revisions-/Kommentarverankerung und Rendering. Überprüfe alle Seiten und iteriere bei Fehlern. Zähle Änderungen und Kommentare nur aus der fertigen Datei; trenne Review-Kommentare von vorhandenen Kommentaren. Speichere die aktualisierte Datei unter ihrer bestehenden Identität, sofern keine separate Kopie gewünscht ist. Präsentiere die finale Datei und eine knappe Änderungszusammenfassung. Löse offene fachliche Punkte vor dem Erstellen einer behaupteten finalen Kundenfassung; lösche sie nicht einfach zusammen mit den Kommentaren.
 
