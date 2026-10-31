@@ -57,6 +57,10 @@ Fehler und Verbesserungsvorschläge können als Issue oder Pull Request eingerei
 
 Verwende für öffentliche Beispiele fiktive oder anonymisierte Daten. Vertrauliche Dokumente gehören nicht in öffentliche Issues oder Pull Requests.
 
+## Beiträge auf dominikai.social
+
+Auf **[dominikai.social](https://dominikai.social)** publiziere ich persönliche Beiträge und Reflexionen zu **künstlicher Intelligenz und Leadership**. Die Website ergänzt die Arbeitsanweisungen auf GitHub um meine Gedanken und Einordnungen zu diesen Themen.
+
 ## Über die Sammlung
 
 Persönliche Arbeitsmaterialien von Dominik Steiner. Die Inhalte stellen keine offiziellen Positionen von Arbeitgebern, Behörden oder Organisationen dar.
